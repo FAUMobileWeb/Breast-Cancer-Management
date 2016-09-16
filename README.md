@@ -9,4 +9,4 @@ The patient inputs symptoms and test results, while doctors analyses the data an
 The application was inspired by the many people who have or are suffering from breast cancer.
 
 #Inspiration
-Our family members were afected by Breast Cancer. We decided to create an App that would help cancer patients input data rather than constantly visit a doctor's office. This way making it much easier for the Cancer patient to manage and cope with the disease.
+Our family members were afected by Breast Cancer. We decided to create an App that would help cancer patients, to input data rather than constantly visit a doctor's office. This way, making it much easier for the Cancer patient to manage and cope with the disease.
