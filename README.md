@@ -12,4 +12,4 @@ The application was inspired by the many people who have or are suffering from b
 Our family members were afected by Breast Cancer. We decided to create an App that would help cancer patients, to input data rather than constantly visit a doctor's office. This way, making it much easier for the Cancer patient to manage and cope with the disease.
 
 ##9/20/16
-We will be focusing on Breast Cancer Managment. We want tohelp those that got diagnos with Breat cancer and allow them to find quick information and if need be get in contact with there doctor.
+We will be focusing on Breast Cancer Managment. We want to help those that got diagnose with Breast cancer and allow them to find quick information and if needed to, get in contact with there doctor.
