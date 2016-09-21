@@ -1,1 +1,1 @@
-All homework is submitted here
+We submit our homework assignments here.
