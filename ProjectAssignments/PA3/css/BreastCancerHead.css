@@ -1,0 +1,39 @@
+
+body.aboutbod {
+  background-color: pink;
+  font-family: Arial;
+}
+div.about {
+  background-color: white;
+  border-radius: 100px;
+  padding: 60px;
+}
+h1.abouth1 {
+color: black;
+   -webkit-text-fill-color: pink; 
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black;
+font-size: 30px;
+}
+h2.abouth2{
+color: black;
+   -webkit-text-fill-color: #3399ff; 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+  
+}
+table.abouttb {
+	
+  background-color: pink;
+  color: black;
+  border-radius: 15px;
+  
+}
+table tr td {
+  padding: 15px;
+}
+table tr th {
+padding-left: 15px;}
+
+
+

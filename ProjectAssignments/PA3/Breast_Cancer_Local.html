@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang=en manifest="manifest.appcache">
+
+<head>
+  <title>Breast Cancer Aide</title>
+
+  <!--Adjusting the page on mobile screen  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css"
+  />
+  <link rel="stylesheet" href="css/BreastCancerHead.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <script src="scripts/jquery-1.9.1.min.js"></script>
+  <script src="scripts/chromeFileProtocolFix.js"></script>
+  <script src="scripts/jquery.mobile-1.3.1.min.js"></script>
+  
+  
+</head>
+
+<body>
+
+
+  <!-- Start of first page -->
+<div data-role="page" id="pageHome">
+    <div data-role="header" data-theme="b">
+      <h1>Breast Cancer Aide</h1>
+    </div>
+    <div data-role="content">
+      Password :
+      <input type="password" id="passcode"></input>
+
+      <div data-role="controlgroup" id="numKeyPad">
+        <a data-role="button" id="btnEnter" type="submit">Enter</a>
+        <a href="#pageAbout" data-role="button">About</a>
+      </div>
+      <div data-role="controlgroup" data-type="horizontal">
+        <a data-role="button" onclick="addValueToPassword(7)">7</a>
+        <a data-role="button" onclick="addValueToPassword(8)">8</a>
+        <a data-role="button" onclick="addValueToPassword(9)">9</a>
+      </div>
+      <div data-role="controlgroup" data-type="horizontal">
+        <a data-role="button" onclick="addValueToPassword(4)">4</a>
+        <a data-role="button" onclick="addValueToPassword(5)">5</a>
+        <a data-role="button" onclick="addValueToPassword(6)">6</a>
+      </div>
+      <div data-role="controlgroup" data-type="horizontal">
+        <a data-role="button" onclick="addValueToPassword(1)">1</a>
+        <a data-role="button" onclick="addValueToPassword(2)">2</a>
+        <a data-role="button" onclick="addValueToPassword(3)">3</a>
+      </div>
+      <div data-role="controlgroup" data-type="horizontal">
+        <a data-role="button" onclick="addValueToPassword(0)">0</a>
+        <a data-role="button" onclick="addValueToPassword('bksp')"
+        data-icon="delete">del</a>
+      </div>
+	  
+	  <p>
+	  <br>
+	  <br>
+	  NOTE: If you have not yet created an account the password will be "2345"
+	  
+    </div>
+  </div>
+
+  <!--Disclaimer Page -->
+  <div data-role="page" id="legalNotice" data-close-btn="none">
+    <div data-role="header" data-theme="b">
+      <h1>Disclaimer</h1>
+    </div>
+    <div data-role="content">
+      [Welcome to the Breast Cancer App would you like to continue]
+      <br>
+      <a href="#pageUserInfo" id="noticeYes" data-role="button"
+      data-icon="forward" data-mini="false">Yes</a>
+    </div>
+  </div>
+
+  <!--About Page -->
+   <div data-role="page" id="pageAbout"> 
+ <div data-role="header" data-theme="b">
+      <a href="#pageMenu" data-role="button" data-icon="home"
+      data-iconpos="left">Home</a>
+      <h1>BREAST CANCER</h1>
+    </div>
+	
+	
+    <div data-role="content">
+	<div align="center">
+     <figure>
+        <img src="Media/Breastcancerpic.png" alt="Cancer Awareness"
+        width="333" height="228">
+        <figcaption><strong>Fig. 1 - Breast 
+
+          Cancer Awareness</strong>
+      </figcaption>
+    </figure>
+
+    <h2 class = "abouth2">Breast cancer is a kind of cancer that develops from breast cells.</h2>
+    <p>Breast cancer usually starts off in the inner lining of milk ducts or the lobules that supply them with milk. A malignant tumor can spread to other parts of the body.<br> A breast cancer that started off in the lobules is known as lobular carcinoma, while one that developed from the ducts is called ductal carcinoma.
+     Breast cancer is the most common invasive cancer in females worldwide. It accounts for 16% of all female cancers and 22.9% of invasive cancers in women. 18.2% of all cancer deaths worldwide, including both males and females, are from breast cancer.
+     Breast cancer rates are much higher in developed nations compared to developing ones. There are several reasons for this, with possibly life-expectancy being one of the key factors - breast cancer is more common in elderly women; women in the richest countries live much longer than those in the poorest nations.<br> The different lifestyles and eating habits of females in rich and poor countries are also contributory factors, experts believe.
+     </p>
+
+    <video width="333" height="228" controls>
+      <source src="Media/BreastCancervideo.mp4" type="video/mp4">
+        <source src="Media/BreastCancervideo.ogg" type="video/ogg">
+		
+       
+    </video>
+    <p>
+      The following are key terms and information about the many stages of breast cancer.
+    </p>
+   <h2 class = "abouth2">Common Terms</h2>
+   <ul align="justify">
+      <li><b>Ductal Carcinoma</b> <em>- in situ (DCIS) is the presence of abnormal cells inside a milk duct in the breast.</em>
+      </li>
+      <li><b>Lobular Carcinoma</b> <em>- s a type of breast cancer that begins in the milk-producing glands (lobules) of the breast</em>
+      </li>
+      <li><b>Mammogram</b><em>- an image of the breast obtained by mammography.</em>
+      </li>
+      <li><b>Adenocarcinoma</b><em> - Cancer that originates in the glandular tissue, such as in the ducts or lobules of the breast.</em>
+      </li>
+      <li><b>Accessory breast tissue</b><em>- An uncommon condition in which additional breast tissue is found in the axillary (underarm) area. Women with this condition often require special mammographic examination.</em>
+      </li>
+      </ul>
+      
+    <h2 class = "abouth2">Stages of Cancer</h2>
+
+    <table class = "abouttb">
+      <tr>
+        <th>Stage</th>
+        <th>Meaning</th>
+      </tr>
+      <tr>
+        <td><em>Stage I</em>
+        </td>
+        <td> usually means that a cancer is relatively small and contained within the organ it started in.</td>
+      </tr>
+      <tr>
+        <td><em>Stage II </em>
+        </td>
+        <td>usually means the cancer has not started to spread into surrounding tissue but the tumour is <br>
+		larger than in stage 1. Sometimes stage 2 means that cancer cells have spread into lymph nodes close<br>
+		to the tumour. This depends on the particular type of cancer.</td>
+      </tr>
+      <tr>
+        <td><em>Stage III</em>
+        </td>
+        <td>usually means the cancer is larger. It may have started to spread into surrounding tissues and there<br>
+		are cancer cells in the lymph nodes in the area.</td>
+      </tr>
+      <tr>
+        <td><em>Stage IV</em>
+        </td>
+        <td>means the cancer has spread from where it started to another body organ. This is also called secondary<br>
+		or metastatic cancer.</td>
+      </tr>
+      
+    </table>
+	
+	<h2 class = "abouth2">Top 10 Contries that have the highest rate of Breast Cancer</h2>
+	<ol align="justify">
+	<b>
+      <li>Belgium
+      </li>
+      <li>Denmark</li>
+      <li>France</li>
+      <li>The Netherlands</li>
+	  <li>Bahamas</li>
+	  <li>Iceland</li>
+	  <li>United Kingdom</li>
+	  <li>Barbados</li>
+	  <li>United State of America</li>
+	  <li>Ireland</li>
+	  </b>
+    </ol>
+
+     <h2 class = "abouth2">Our Mission</h2>
+    <p>To create an interactive data sharing application between patient and doctor.<br> The patient inputs symptoms and test results, while doctors analyses the data and determines whether the patient is at risk of relapse, which leads to further evaluation.<br> The application was inspired by the many people who have or are suffering from breast cancer.
+    </p>
+	</div>
+    </div>
+</div>
+ 
+ 
+ 
+  
+  
+  
+   <!--User Information Page/Form -->
+  <div data-role="page" id="pageUserInfo">
+    <div data-role="header">
+     <div data-role="header" data-theme="b">
+      <a href="#pageMenu" data-role="button" data-icon="home"
+      data-iconpos="left" data-inline="true">Home</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">About</a>
+      <h1>Patient Information</h1
+    </div>
+	</div>
+    <!-- /header -->
+    <div data-role="content"data-theme="b">
+      <form id="frmUserForm" action="">
+        <div data-role="fieldcontain">
+          <label for="txtFirstName">First Name: </label>
+          <input type="text" placeholder="First Name" name="txtFirstName"
+          data-mini="false" id="txtFirstName" value=""
+          required>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="txtLastName">Last Name: </label>
+          <input type="text" placeholder="Last Name" name="txtLastName"
+          data-mini="false" id="txtLastName" value=""
+          required>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="datBirthdate">Birthdate: </label>
+          <input type="date" name="datBirthdate" data-mini="false"
+          id="datBirthdate" value="" required>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="changePassword">Edit Password: </label>
+          <input type="password" placeholder="New Password" name="changePassword"
+          data-mini="false" id="changePassword" value=""
+          required>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="txtHealthCardNumber">Health Card Number: </label>
+          <input type="text" placeholder="Health Card Number"
+          name="txtHealthCardNumber" data-mini="false"
+          id="txtHealthCardNumber" value="" required>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="slcCancerType" class="select">Cancer Type: </label>
+          <select name="slcCancerType" id="slcCancerType" data-mini="false"
+          data-native-menu="false" required>
+            <option>Select Cancer Type</option>
+            <option value="Tubular">Tubular</option>
+            <option value="Mucinous">Mucinous</option>
+            <option value="Medullary">Medullary</option>
+            <option value="Cribriform">Cribriform</option>
+			<option value="DKCT">Not Sure</option>
+          </select>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="slcCancerStage" class="select">Cancer Stage: </label>
+          <select name="slcCancerStage" id="slcCancerStage" data-mini="false"
+          data-native-menu="false" required>
+            <option>Select Cancer Stage</option>
+             <option value="StageOne">Stage I</option>
+            <option value="StageTwo">Stage II</option>
+            <option value="StageThree">Stage III</option>
+            <option value="StageFour">Stage IV</option>
+			<option value="DKCS">Not Sure</option>
+          </select>
+        </div>
+		
+		
+        <div data-role="fieldcontain">
+          <label for="slcBRCA1" class="select">BRCA1 type </label>
+          <select name="slcBRCA1" id="slcBRCA1" data-mini="false"
+          data-native-menu="false" required>
+            <option>Select BRCA1 type</option>
+            <option value="pos1">Positive</option>
+            <option value="neg1">Negative</option>
+			<option value="DKBRAC1">Not Sure</option>
+           
+          </select>
+        </div>
+		
+		   <div data-role="fieldcontain">
+          <label for="slcBRCA2" class="select">BRCA2 type </label>
+          <select name="slcBRCA2" id="slcBRCA2" data-mini="false"
+          data-native-menu="false" required>
+            <option>Select BRCA2 type</option>
+            <option value="pos2">Positive</option>
+            <option value="neg2">Negative</option>
+			<option value="DKBRAC2">Not Sure</option>
+			</select>
+		</div>
+		
+		   <div data-role="fieldcontain">
+          <label for="slcHER2" class="select">HER2 type </label>
+          <select name="slcHER2" id="slcHER2" data-mini="false"
+          data-native-menu="false" required>
+            <option>Select HER2 type</option>
+            <option value="zero">A: 0</option>
+            <option value="one">B: +1</option>
+			<option value="two">C: +2</option>
+			<option value="three">D: +3</option>
+			<option value="DKHER2">Not Sure</option>
+			</select>
+		</div>
+		
+		
+        <input type="submit" id="btnUserUpdate" data-icon="check"
+        data-iconpos="left" value="Update" data-inline="true">
+      </form>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Menu page -->
+  <div data-role="page" id="pageMenu">
+     <div data-role="header" data-theme="b">
+      <a href="#pageMenu" data-role="button" data-icon="home"
+      data-iconpos="left" data-inline="true">Home</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Breast Cancer Aide</h1>
+    </div>
+    <div data-role="content">
+      <div data-role="controlgroup">
+        <a href="#pageUserInfo" data-role="button">User Info</a>
+        <a href="#pageRecords" data-role="button">Mass Size Records</a>
+        <a href="#pageGraph" data-role="button">Mass Size Over Time Graph</a>
+        <a href="#pageAdvice" data-role="button">Suggestions</a>
+		
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+  <!-- Records page -->
+  <div data-role="page" id="pageRecords">
+    <div data-role="header" data-theme="b">
+      <a href="#pageMenu" data-role="button" data-icon="home"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Mass Size Records</h1>
+    </div>
+    <div data-role="content">
+      <!-- User's Information Section -->
+      <div data-role="fieldcontain" id="divUserSection">
+      </div>
+      <h3 align="center">History</h3>
+      <div data-role="fieldcontain">
+        <!-- Records Table -->
+        <table align="center" id="tblRecords" class="ui-responsive table-stroke">
+        </table>
+      </div>
+      <div data-role="fieldcontain">
+        <a href="#pageNewRecordForm" id="btnAddRecord" data-role="button"
+        data-icon="plus">Add New Entry</a>
+        <a href="#" data-role="button" id="btnClearHistory"
+        data-icon="delete">Clear History</a>
+	   </div>
+	   <div data-role="controlgroup">
+	   <a href="#pageGraph" data-role="button" data-icon="grid">Graph visual of Mass size</a>
+	   </div>
+	  
+	     
+  </div>
+  </div>
+
+  
+  <!-- New Record Form page -->
+  <div data-role="page" id="pageNewRecordForm">
+    <div data-role="header" data-theme="b">
+      <a href="#pageMenu" data-role="button" data-icon="home"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>New Record</h1>
+    </div>
+    <div data-role="content">
+      <form id="frmNewRecordForm" action="">
+        <div data-role="fieldcontain">
+          <div data-role="fieldcontain">
+            <label for="datExamDate">Date: </label>
+            <input type="date" name="datExamDate" data-mini="false"
+            id="datExamDate" value="">
+          </div>
+          <div data-role="fieldcontain">
+            <label for="txtMassSize">Mass Size (mm): 
+            </label>
+            <input type="number" step="0.01" placeholder="0" name="txtMassSize"
+            data-mini="false" id="txtMassSize" value="">
+          </div>
+        
+        </div>
+        <input type="submit" id="btnSubmitRecord" value="">
+      </form>
+    </div>
+
+  </div>
+
+
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  <!--Graph Page -->
+  <div data-role="page" id="pageGraph" class="test">
+      <div data-role="header" data-theme="b">
+      <a href="#pageMenu" data-role="button" data-icon="home"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Analyze</h1>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Mass Size vs Date</h3>
+      </div>
+      <div class="panel-body">
+        <canvas id="GraphCanvas" width="500" height="500" style="border:1px solid #000000;">
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+  <!--Advice Page -->
+  <div data-role="page" id="pageAdvice">
+     <div data-role="header" data-theme="b">
+      <a href="#pageMenu" data-role="button" data-icon="home"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Suggestions</h1>
+    </div>
+    <div data-role="content">
+      <canvas id="AdviceCanvas" width="550" height="550"
+      style="border:1px solid #000000;">
+      </canvas>
+    </div>
+  </div>
+
+  <!--Custom Javascript/Jquery -->
+  <script src="scripts/RGraph.common.core.js"></script>
+  <script src="scripts/RGraph.common.effects.js"></script>
+  <script src="scripts/RGraph.line.js"></script>
+  <script src="scripts/RGraph.cornergauge.js"></script>
+  <script src="scripts/RGraph.hprogress.js"></script>
+
+ 
+  <script src="scripts/UserForm.js"></script>
+  <script src="scripts/Table.js"></script> 
+  <script src="scripts/Navigation.js"></script>
+  <script src="scripts/Advice.js"></script>
+  <script src="scripts/GraphAnimate.js"></script>
+  <script src="scripts/pageLoader.js"></script>
+</body>
+
+</html>
