@@ -13,3 +13,5 @@ Our family members were afected by Breast Cancer. We decided to create an App th
 
 ##9/20/16
 We will be focusing on Breast Cancer Managment. We want to help those that got diagnose with Breast cancer and allow them to find quick information and if needed to, get in contact with there doctor.
+
+The Breast Cancer Video can be seen at https://www.youtube.com/watch?v=i7Ws29G09LE&t=3s
